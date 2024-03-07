@@ -1,0 +1,64 @@
+.outer-container {
+  border: 1px solid #e0e0e0;
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: flex;
+}
+.up-up-view {
+  padding: 10px;
+}
+.up-view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #000000;
+  font-family: 'Avenir Next', sans-serif;
+}
+.inc-dec {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.dec {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.inc {
+  color: green;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+.price {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
+  font-family: 'Avenir Next', sans-serif;
+}
+.logo-image {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.graph-view {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
+.graph-image {
+  object-fit: "contain";
+}
+@media screen and (max-width: 768px) {
+  .outer-container {
+    width: 200px;
+    height: 120px;
+  }
+}

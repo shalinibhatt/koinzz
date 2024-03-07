@@ -1,0 +1,86 @@
+.main-container {
+  background-color: #fff;
+  margin: -10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.trending-coins {
+  margin: 10px;
+  margin-left: 50px;
+  margin-bottom: 0;
+}
+.heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: "#000000";
+  font-family: 'Avenir Next', sans-serif;
+}
+.horizontal-view-with-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.left-arrow-cont {
+  background-color: white;
+  box-shadow: 0px 0px 2px 0px #cbc3c3;
+  padding: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 35px;
+}
+.right-arrow-cont {
+  background-color: white;
+  box-shadow: 0px 0px 2px 0px #cbc3c3;
+  padding: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+}
+.horizontalScroll {
+  flex-direction: row;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  height: 100%;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+@media screen and (max-width: 768px) {
+  .right-arrow-cont {
+    background-color: white;
+    box-shadow: 0px 0px 2px 0px #cbc3c3;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 12px;
+  }
+
+  .left-arrow-cont {
+    background-color: white;
+    box-shadow: 0px 0px 2px 0px #cbc3c3;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 37px;
+  }
+}
