@@ -6,7 +6,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SentimentCardComponent from "../../../components/middle/SentimentCardComponent";
 import { useState, useRef } from "react";
-import { Line } from "rc-progress";
+import Line from "../../../components/middle/Line";
 
 const Sentiment = () => {
   const data2 = [
@@ -108,30 +108,7 @@ const Sentiment = () => {
                   {item.name}
                 </p>
                 <div className={styles["line-div"]}>
-                  <Line
-                    prefixCls="rc-progress"
-                    percent={item.amount}
-                    strokeWidth="1"
-                    strokeColor={item.color}
-                    trailColor="transparent"
-                  />
-                  <p
-                    style={{
-                      position: "absolute",
-                      marginLeft: "10px",
-                      color: "grey",
-                      left: `${
-                        item.amount < 10
-                          ? `${item.amount * 1.8}%`
-                          : item.amount < 20
-                          ? `${item.amount + 5}%`
-                          : `${item.amount}%`
-                      }`,
-                      fontSize: "14px",
-                    }}
-                  >
-                    {item.amount}%
-                  </p>
+                  <Line percent={item.amount} strokeColor={item.color} />
                 </div>
               </div>
             ))}
