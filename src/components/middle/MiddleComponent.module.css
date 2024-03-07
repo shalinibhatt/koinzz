@@ -137,6 +137,12 @@ button {
   left: 0;
 }
 @media screen and (max-width: 1013px) {
+  .card-first {
+    width: 100%;
+  }
+  .card-second {
+    width: 100%;
+  }
   .box {
     width: 300px;
     display: flex;
@@ -167,4 +173,80 @@ button {
     left: 0;
   }
 }
-
+@media screen and (max-width: 600px) {
+  .card-first {
+    width: 100%;
+  }
+  .card-second {
+    width: 100%;
+  }
+  .box {
+    width: 200px;
+    display: flex;
+  }
+  .line-1 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .line {
+    border-radius: 10px;
+    display: flex;
+    height: 8px;
+    width: 100%;
+    background: linear-gradient(to right, red, yellow, green);
+  }
+  .current {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid black;
+    margin: 0 auto;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+  .team-profile__card{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card-first {
+    width: 100%;
+  }
+  .card-second {
+    width: 100%;
+  }
+  .box {
+    width: 150px;
+    display: flex;
+  }
+  .line-1 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .line {
+    border-radius: 10px;
+    display: flex;
+    height: 8px;
+    width: 100%;
+    background: linear-gradient(to right, red, yellow, green);
+  }
+  .current {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid black;
+    margin: 0 auto;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+}

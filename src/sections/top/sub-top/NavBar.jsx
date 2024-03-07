@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <div className={styles["nav-bar"]}>
-      <div className={styles["left"]}>
+      <div style={{ userSelect: "none" }} className={styles["left"]}>
         <p
           style={{
             fontSize: "20px",
@@ -40,39 +40,41 @@ const NavBar = () => {
           </sup>
         </p>
       </div>
-      {window.innerWidth < 600 ? (
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-          className={styles["hamburger"]}
-          onClick={toggleMenu}
-        >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        className={styles["hamburger"]}
+        onClick={toggleMenu}
+      >
+        <div className={styles["icon-menu"]}>
           <FontAwesomeIcon color="black" icon={faBars} />
         </div>
-      ) : (
-        <div className={styles["right"]}>
-          <ul className={styles["ul"]}>
-            <li>Crypto Taxes</li>
-            <li>Free Tools</li>
-            <li>Exchanges</li>
-            <li>Resource Center</li>
-          </ul>
-          <button>Get Started</button>
-        </div>
-      )}
+      </div>
+      {/* big screen */}
+      <div className={styles["right"]}>
+        <ul className={styles["ul"]}>
+          <li>Crypto Taxes</li>
+          <li>Free Tools</li>
+          <li>Exchanges</li>
+          <li>Resource Center</li>
+        </ul>
+        <button>Get Started</button>
+      </div>
       {menuOpen && (
         <div className={styles["mobile-menu"]}>
-          <ul className={styles["ul-mobile"]}>
+          <ul style={{ padding: "0" }} className={styles["ul-mobile"]}>
             <li>Crypto Taxes</li>
             <li>Free Tools</li>
             <li>Exchanges</li>
             <li>Resource Center</li>
+            <li>
+              <button>Get Started</button>
+            </li>
           </ul>
-          <button>Get Started</button>
         </div>
       )}
     </div>

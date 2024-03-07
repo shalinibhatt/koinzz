@@ -2,6 +2,9 @@
   flex-direction: row;
   justify-content: space-between;
   display: flex;
+  padding: 0 1.5rem 0 1.5rem;
+  height: 3.75rem;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 .left {
   display: flex;
@@ -29,7 +32,47 @@ button {
   background-color: blue;
   border: none;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.9;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  display: none;
+  background-color: #fff;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.icon-menu {
+  display: none;
+}
+button {
+  background-color: blue;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
   color: white;
-  padding: 10px 10px;
+}
+
+@media (max-width: 768px) {
+  .right {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: flex;
+  }
 }
